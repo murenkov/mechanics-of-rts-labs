@@ -39,15 +39,20 @@
 
 %% Images
 \usepackage{graphicx}
-% \graphicspath{{images/}{images2/}}
+\graphicspath{{include/labs/lab2/}{include/labs/lab7/}}
 \setlength\fboxsep{3pt}
 \setlength\fboxrule{1pt}
 \usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{caption}
+\renewcommand\thesubfigure{\asbuk{subfigure}}
 
 %% Tables
 \usepackage{array,tabularx,tabulary,booktabs}
 \usepackage{longtable}
 \usepackage{multirow}
+\usepackage{float}
+\restylefloat{table}
 
 %% Programming
 \usepackage{etoolbox}
@@ -61,6 +66,8 @@
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 
+\usepackage[shortcuts]{extdash}
+\usepackage{verbatim}
 \usepackage{moreenum}
 
 %% Page
@@ -91,7 +98,7 @@
 \renewcommand{\geq}{\ensuremath{\geqslant}}
 \renewcommand{\emptyset}{\varnothing}
 
-% \usepackage{titlesec}
-% \titleformat{\section}{\LARGE\normalfont\bfseries}{Часть \thesection}{1em}{}
-% \titleformat{\subsection}{\large\normalfont\bfseries}{Задача \thesubsection}{1em}{}
+\usepackage{titlesec}
+\titleformat{\section}{\LARGE\normalfont\bfseries\filcenter}{}{1em}{}
+\titleformat{\subsection}{\large\normalfont\bfseries\filcenter}{}{1em}{}
 
